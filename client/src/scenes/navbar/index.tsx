@@ -14,7 +14,9 @@ const Navbar = (props: Props) => {
       {/* LEFT SIDE  */}
       <FlexBetween gap="0.75rem">
         <PixIcon sx={{ fontSize: "28px" }} />
-        <Typography variant="h4" fontSize="16px" />
+        <Typography variant="h4" fontSize="16px">
+          Finanseer
+        </Typography>
       </FlexBetween>
       {/* RIGHT SIDE  */}
       <FlexBetween gap="2rem">
@@ -24,7 +26,7 @@ const Navbar = (props: Props) => {
             onClick={() => setSelected("dashboard")}
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],
-              textDecoration:"inherit"
+              textDecoration: "inherit",
             }}
           >
             dashboard
@@ -36,7 +38,7 @@ const Navbar = (props: Props) => {
             onClick={() => setSelected("predictions")}
             style={{
               color: selected === "predictions" ? "inherit" : palette.grey[700],
-              textDecoration:"inherit"
+              textDecoration: "inherit",
             }}
           >
             predictions
