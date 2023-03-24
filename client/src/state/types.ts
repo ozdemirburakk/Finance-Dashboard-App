@@ -14,11 +14,11 @@ export interface IMonth {
 }
 
 export interface IDay {
-    id: string;
-    date: string;
-    revenue: number;
-    expenses: number;
-  }
+  id: string;
+  date: string;
+  revenue: number;
+  expenses: number;
+}
 
 export interface IGetKpisResponse {
   id: string;
@@ -29,5 +29,16 @@ export interface IGetKpisResponse {
   totalExpenses: number;
   expensesByCategory: IExpensesByCategory;
   monthlyData: Array<IMonth>;
-  dailyData:Array<IDay>;
+  dailyData: Array<IDay>;
+}
+
+export interface IGetProductsResponse {
+  id: string;
+  _id: string;
+  __v: number;
+  price: number;
+  expense: number;
+  transactions: Array<string>;
+  createdAt:string;
+  updatedAt:string;
 }
