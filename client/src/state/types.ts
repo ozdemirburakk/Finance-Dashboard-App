@@ -39,17 +39,17 @@ export interface IGetProductsResponse {
   price: number;
   expense: number;
   transactions: Array<string>;
-  createdAt:string;
-  updatedAt:string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface IGetTransactionsResponse {
   id: string;
   _id: string;
   __v: number;
-  buyer:string
+  buyer: string;
   amount: number;
   productIds: Array<string>;
-  createdAt:string;
-  updatedAt:string;
+  createdAt: string;
+  updatedAt: string;
 }

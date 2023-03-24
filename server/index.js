@@ -29,7 +29,7 @@ app.use(cors());
 
 app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes);
-app.use("transaction", transactionRoutes);
+app.use("/transaction", transactionRoutes);
 
 /* MONGOOESE SETUP */
 
