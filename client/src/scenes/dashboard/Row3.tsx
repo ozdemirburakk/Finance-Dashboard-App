@@ -123,7 +123,7 @@ const Row3 = () => {
           }}
         >
           <DataGrid
-            columnHeaderHeight={25}
+            columnHeaderHeight={30}
             rowHeight={35}
             hideFooter={true}
             rows={transactionsData || []}
